@@ -1,0 +1,41 @@
+body {
+    font-family: Tahoma;
+}
+.item {
+    display: flex;
+    margin: 30px;
+}
+.inf {
+
+}
+.image img{
+max-height: 150px;
+}
+.wrapper {
+    max-width: 1000px;
+}
+.small {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.product-card {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    width: 500px;
+
+}
+.product-title {
+    font-family: Verdana;
+    font-size: 18px;
+
+    margin-left: 50px;
+
+}
+
+img.product-image  {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
