@@ -47,7 +47,7 @@ for (i = 0; i < arr.length; i++) {
 for (i = 0; i < arr.length; i++) {
     if (arr[i] % 3 === 0) arr[i] = 'okten';
 }
-for (i = arr.length; i >= 0; i--) console.log(arr[i]);
+for (i = arr.length - 1; i >= 0; i--) console.log(arr[i]);
 
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 i = arr.length;
@@ -80,7 +80,7 @@ for (i = arr.length; i >= 0; i--) {
 
 // 7. замінити кожне число кратне 3 на слово "okten"
 let counter = 0;
-for (i = arr.length; i >= 0; i--) {
+for (i = arr.length - 1; i >= 0; i--) {
     if (arr[i] % 3 === 0) {
         arr[i] = 'okten';
         counter ++;
