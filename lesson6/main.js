@@ -12,7 +12,7 @@ strArr.forEach(function (item){
 })
 // - Перевести до нижнього регістру настипні стрінгові значення
 // 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
-strArr = ['hello world', 'lorem ipsum', 'javascript is cool'];
+strArr = ['HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'];
 strArr.forEach(function (item){
     console.log(item.toLowerCase());
 })
