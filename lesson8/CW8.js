@@ -65,7 +65,6 @@ for (const parElement of par) {
 let txt2 = document.getElementsByClassName('text2');
 for (const txt2Element of txt2) {
     txt2Element.innerText = 'sep-2021';
-
 }
 
 
