@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: "Franklin Gothic Medium";
+}
+.posts {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.posts1 {
+    display: block;
+}
+
+.post {
+    padding: 10px;
+    border: 1px solid slategrey;
+    position: relative;
+}
+
+.postId {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    /*border: 1px solid #1B2C3FFF;*/
+    /*border-radius: 50%;*/
+    padding: 5px;
+}
+
+.postTitle {
+    color: midnightblue;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-left: 45px;
+}
+
+.postBody {
+    color: #0a243e;
+    font-size: 13px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial;
+}
+
+.email {
+    font-size: 14px;
+    font-family: "Courier New";
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.commentBox {
+    background-color: beige;
+   padding: 10px;
+}
+
