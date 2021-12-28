@@ -1,0 +1,45 @@
+найти все машины старше 2000 г
+найти все машины млатше 2015 г
+найти все машины 2008, 2009, 2010 годов
+найти все машины не с этих годов 2008, 2009, 2010 годов
+найти все машины год которых совпадает с ценой
+
+найти все машины bmw старше 2014 года
+найти все машины audi младше 2014 года
+найти первые 5 машин
+найти последнии 5 машин
+
+найти среднее арифметическое цен машин модели KIA
+найти среднее арифметическое цен каждой машины
+посчитать количество каждой марки машин
+найти марку машины количество которых больше всего
+
+найти все машины в модели которых вторая и предпоследняя буква "а"
+найти все машины модели которых больше 8 символов
+
+***найти машины цена которых больше чем цена среднего арифметического всех машин
+
+
+show databases;
+use semix;
+select * from cars where year < 2000;
+select * from cars where year > 2015;
+select * from cars where year >= 2008 and year <= 2010;
+select * from cars where year != 2008 and year != 2009 and year !=2010;
+select * from cars where year = price;
+
+select * from cars where model ='bmw' and year < 2014;
+select * from cars where model ='audi' and year > 2014;
+select * from cars limit 5;
+select * from cars order by id desc limit 5;
+
+select avg(price) from cars where model = 'kia';
+select avg(price) from cars;
+
+select model, count(model) from cars group by model;
+select max(model), count(model) from cars;
+
+select * from cars where model like '_a%a_';
+select * from cars where length(model) > 8;
+
+/*select * from cars where price > avg(price);*/
