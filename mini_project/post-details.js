@@ -62,14 +62,14 @@ commentsWrapper = document.createElement('div');
 commentsWrapper.classList.add('user_wrapper', 'comments_wrapper');
 
 
-
 fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
     .then(response => response.json())
     .then(json => {
         for (const comment of json) {
             const currentComment = document.createElement('div');
             currentComment.classList.add('user', 'comment');
-            currentComment.innerHTML = `<p class='post_title'> ${comment.name}</p><small>${comment.body}</small>`;
+            currentComment.innerHTML = `<h4>${comment.name}</h4><p>${comment.email} </p>
+            <small>${comment.body}</small>`;
             commentsWrapper.appendChild(currentComment);
             console.log(comment);
             wrapper.appendChild(commentsWrapper);
